@@ -6,7 +6,7 @@
     <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
       <div class="form-group">
         <label>Email : </label>
-        <input formControlName="username" type="text" class="form-control" placeholder="Enter your email">
+        <input formControlName="email" type="text" class="form-control" placeholder="Enter your email">
       </div>
 
       <div class="form-group">
@@ -16,9 +16,9 @@
       </div>
 
       <div class="form-group">
-        <label>Phone : </label>
-        <input formControlName="phone" type="text" class="form-control" placeholder="Enter your Phone"
-          id="password" autocomplete="off">
+        <label>Username : </label>
+        <input formControlName="username" type="text" class="form-control" placeholder="Enter your Username"
+          >
       </div>
 
       <button routerLink="/auth/login" type="button" class="btn btn-secondary m-2">Already Registered? Login Here</button>
